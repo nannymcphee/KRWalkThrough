@@ -8,12 +8,12 @@
 import UIKit
 
 open class TutorialItem: NSObject {
-    open let identifier: String
+    public let identifier: String
     
     open var prevAction: (() -> Void)?
     open var nextAction: (() -> Void)?
     
-    open let view: TutorialView
+    public let view: TutorialView
     
     public init(view: TutorialView, identifier: String) {
         assert(!identifier.isEmpty, "Tutorial view must have a valid identifier.")
