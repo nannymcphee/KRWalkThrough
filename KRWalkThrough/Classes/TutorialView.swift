@@ -168,7 +168,7 @@ open class TutorialView: UIView {
         
         let backgroundLayer = CAShapeLayer()
         backgroundLayer.fillColor = fillColor.cgColor
-        backgroundLayer.fillRule = kCAFillRuleEvenOdd
+        backgroundLayer.fillRule = CAShapeLayerFillRule.evenOdd
         backgroundLayer.frame = bounds
         backgroundLayer.name = "TutorialView.backgroundLayer"
         backgroundLayer.path = path.cgPath
